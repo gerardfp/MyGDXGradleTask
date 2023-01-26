@@ -1,5 +1,6 @@
 <img src="cuadraditos.gif" width="200">
 
+# Actividad 1: Atlas packer
 Define una tarea Gradle (y las subtareas necesarias) para
 (1) descomprimir el fichero `piskel.zip`, (2) ensamblar las imágenes 
 extraídas en una sola imagen atlas ubicada en `assets/atlas.png` y por 
@@ -32,4 +33,45 @@ https://docs.gradle.org/current/userguide/working_with_files.html#sec:deleting_f
     *** Este código busca las imágenes con extensión `.png` que haya dentro de un directorio llamado 
 `somedirectory`, y ensambla las cuatro primeras una debajo de otra, a tamaño 64x64, en una imagen resultante
 llamada `atlas.png`.
-    
+
+# Actividad 2: Class generator
+
+Define una tarea Gradle que lea las líneas del fichero de un fichero de texto, 
+y luego, genere un fichero ".java" en el que debe haber definida una clase con un campo
+estático de tipo array de strings; los elementos de este array serán cada una de las
+lineas que se han leído.
+
+Por ejemplo, si el fichero de texto contiene estas líneas:
+```
+Solo se que no se nada
+I have a dream
+Pienso, luego existo
+Sin dudas, no hay progreso
+```
+
+La tarea debe generar un fichero ".java" similar al siguiente:
+```java
+class NombreDeLaClase {
+  static String[] nombreDelArray = {
+    "Solo se que no se nada",
+    "I have a dream",
+    "Pienso, luego existo",
+    "Sin dudas, no hay progreso"
+  };
+}
+```
+*** Tanto la úbicación de este fichero java, como los nombres de la classe y del array, tendràs 
+que averiguarlos a partir del codigo del fichero `core/src/com/mygdx/game/MyGdxGame.java`.
+
+### TIPS:
+* Para leer todas las líneas del fichero y obtenerlas en un `List<String>` puedes utilizar:
+
+```java
+Files.readAllLines(Paths.get("ElFicheroDeLectura"))
+```
+
+* Para escribir un `String` en un fichero puedes utilizar:
+
+```java
+Files.writeString(Paths.get("ElFicheroDeEscritura"), elStringAEscribir)
+```
