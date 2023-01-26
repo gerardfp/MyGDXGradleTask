@@ -36,8 +36,8 @@ llamada `atlas.png`.
 
 # Actividad 2: Class generator
 
-Define una tarea Gradle que lea las líneas del fichero de un fichero de texto, 
-y luego, genere un fichero ".java" en el que debe haber definida una clase con un campo
+Define una tarea Gradle que **lea** las líneas del fichero de un fichero de texto, 
+y luego, **genere** un fichero ".java" en el que debe haber definida una clase con un campo
 estático de tipo array de strings; los elementos de este array serán cada una de las
 lineas que se han leído.
 
