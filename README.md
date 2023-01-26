@@ -1,4 +1,4 @@
-<img src="cuadraditos2.gif" width="200">
+<img src="cuadraditos2.gif" width="360">
 
 # Actividad 1: Atlas packer
 Define una tarea Gradle (y las subtareas necesarias) para
