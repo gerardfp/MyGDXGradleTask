@@ -1,4 +1,4 @@
-<video src="cuadritos.mov" width="360" />
+<img src="cuadraditos3.gif" width="360" />
 
 # Actividad 1: Atlas packer
 Define una tarea Gradle (y las subtareas necesarias) para
