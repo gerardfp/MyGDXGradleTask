@@ -60,7 +60,7 @@ class NombreDeLaClase {
   };
 }
 ```
-*** Tanto la úbicación de este fichero java, como los nombres de la classe y del array, tendràs 
+*** Tanto la ubicación de este fichero java, como los nombres de la clase y del array, tendràs 
 que averiguarlos a partir del codigo del fichero `core/src/com/mygdx/game/MyGdxGame.java`.
 
 ### TIPS:
