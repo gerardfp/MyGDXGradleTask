@@ -67,11 +67,18 @@ que averiguarlos a partir del codigo del fichero `core/src/com/mygdx/game/MyGdxG
 * Para leer todas las líneas del fichero y obtenerlas en un `List<String>` puedes utilizar:
 
 ```java
+import java.nio.file.Paths;
+import java.nio.file.Files;
+
 Files.readAllLines(Paths.get("ElFicheroDeLectura"))
 ```
 
 * Para escribir un `String` en un fichero puedes utilizar:
 
 ```java
+import java.nio.file.Paths;
+import java.nio.file.Files;
+
+
 Files.writeString(Paths.get("ElFicheroDeEscritura"), elStringAEscribir)
 ```
